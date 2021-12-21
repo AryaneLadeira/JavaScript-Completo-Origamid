@@ -2,7 +2,7 @@ export default function outsideClick(element, events, callback){
     const html = document.documentElement
     const outside = 'data-outside'
 
-    if(!element.hasAttribue(outside)){
+    if(!element.hasAttribute(outside)){
         events.forEach(userEvent =>{
             html.addEventListener(userEvent, handleOutsideClick)
         })

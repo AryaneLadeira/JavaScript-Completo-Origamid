@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Kaushan+Script&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+.container-child button{
+    border: none;
+    border-radius: 10px;
+    background: #440083;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+    transition: all .5s;
+}
+
+.container-child button:hover{
+    background: #fff;
+    color: #440083
+}
+
+.container-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.cep{
+    background-color: #6500c4;
+    color: white;
+}
+
+.cep h1, .chuck h1{
+    text-shadow: 8px 5px #440083;
+}
+
+.cep form *{
+    margin: 0 auto;
+    display: block;
+}
+
+.cep form input {
+    background: none;
+    border: white 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.cep form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.cep .resultado {
+    margin-top: 30px;
+    font-family: 'Inconsolata', monospace;
+    flex-direction: column;
+    background: #bfa8ff25;
+    padding: 10px 20px;
+    display: none;
+    justify-content: center;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.651);
+}
+
+.cep .title::after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: white;
+    display: block; 
+    margin-top: 2px;
+}
+
+.cep .title:not(.last)::after{
+    margin-bottom: 10px;
+}
+.container-child h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.resultado.active {
+    display: flex;
+    animation: anime 0.5s forwards;
+}
+
+@keyframes anime {
+    from {
+        opacity: 0;
+        height: 0;
+    }
+    to {
+        opacity: 1;
+        height: 200px;
+    }
+}
+
+.chuck .container-piada.active {
+    display: flex;
+    animation: animeChuck 0.5s forwards;
+}
+
+@keyframes animeChuck {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* BITCOIN */
+
+.blockchain h1{
+    text-shadow: 8px 5px #4400837c
+}
+
+.preco-bitcoin {
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.preco-bitcoin::before{
+    font-family: 'Inconsolata', monospace;
+    content: 'R$';
+    text-shadow: 2px 2px #4400837c;
+    font-size: 0.5em;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.blockchain p {
+    margin-top: 60px;
+    font-family: 'Inconsolata', monospace;
+    background: #6500c4;
+    padding: 10px 20px;
+    font: 1rem;
+    color: white;
+    box-shadow: 10px 10px #440083;
+}
+
+/* CHUCK NORRIS */
+
+.chuck{
+    background-color: #6500c4;
+    color: white;
+}
+
+.chuck h1 {
+    max-width: 60%;
+}
+
+.chuck button {
+    padding: 10px 20px;
+}
+
+.chuck .container-piada {
+    opacity: 0;
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+.chuck .container-piada span{
+    position: relative;
+    margin-left: 20px;
+    align-self: flex-end;
+}
+
+.chuck .container-piada span::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    transform: rotate(-90deg);
+    top: 15px;
+    left: -10px;
+}
+
+.chuck .container-piada .piada {
+    font-family: 'Inconsolata', monospace;
+    background: #bfa8ff25;
+    padding: 10px 20px;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.651);
+    
+}

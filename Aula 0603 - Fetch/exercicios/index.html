@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregou()">
+    <div>
+        <div class="cep container-child">
+            <h1>Consulte seu CEP</h1>
+            <form>
+                <input type="text" class="inputcep">
+                <button class="btncep">Consultar</button>
+            </form>
+
+            <div class="resultado">
+                <span class="title">Logradouro: <span class="logradouro">Rua Chácara</span></span>
+                <span class="title">Complemento: <span class="complemento"></span></span>
+                <span class="title">Bairro: <span class="bairro">Santa Luzia</span></span>
+                <span class="title">Localidade: <span class="localidade">Juiz de Fora</span></span>
+                <span class="title">UF: <span class="uf">MG</span></span>
+                <span class="title last">DDD: <span class="ddd">32</span></span>
+            </div>
+        </div>
+
+        <div class="blockchain container-child">
+            <h1>Compre Bitcoin</h1>
+            <span class="preco-bitcoin">00.00</span>
+            <p>Atualizado pela última vez em:  <span class="data-bitcoin"></span></p>
+        </div>
+
+        <div class="chuck container-child">
+            <h1>Gerador de piadas do Chuck Norris</h1>
+            <div class="container-piada">
+                <p class="piada">Piada</p>
+                <span><img src="" alt="" class="chuck-norris-img"></span>
+            </div>
+            
+            <button class="btnchuck">Próxima</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
